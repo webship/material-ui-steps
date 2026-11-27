@@ -1,0 +1,67 @@
+{
+  "name": "@webship-js/material-ui-steps",
+  "version": "2.0.0",
+  "description": "Cucumber step definitions for sites and apps built with Material UI (MUI's React components), for webship-js: dialogs, side panels and drop-down menus opened, answered and closed; select lists and search lists; panels, tabs and trees; notifications, alerts, hints, the loading spinner and progress bars; fields shown as valid or invalid with their messages; steps, pagination, breadcrumbs and badges; and the rows of tables (Data Grid and Table). Each step waits on the component's own state and the end of its transitions, never for a fixed time. No step phrase names the framework.",
+  "main": "tests/step-definitions/material-ui-helpers.js",
+  "files": [
+    "tests/step-definitions/",
+    "tests/features/",
+    "demo-src/",
+    "assets/",
+    "README.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "test": "cucumber-js --config cucumber.js",
+    "test:dry": "cucumber-js --config cucumber.js --dry-run",
+    "test:examples": "node tests/check-examples.js",
+    "test:paths": "node tests/check-paths.js",
+    "test:must-fail": "node tests/check-must-fail.js",
+    "test:chromium": "BROWSER=chromium cucumber-js --config cucumber.js",
+    "test:firefox": "BROWSER=firefox cucumber-js --config cucumber.js",
+    "test:webkit": "BROWSER=webkit cucumber-js --config cucumber.js",
+    "test:headed": "HEADLESS=false cucumber-js --config cucumber.js",
+    "generate-reports": "generate-reports",
+    "test:fast": "SLOW_MO=0 cucumber-js --config cucumber.js",
+    "demo:build": "bash .github/scripts/build-demo.sh",
+    "demo:serve": "bash .github/scripts/serve-demo.sh",
+    "admin:build": "bash .github/scripts/build-admin.sh",
+    "admin:serve": "bash .github/scripts/serve-admin.sh"
+  },
+  "keywords": [
+    "webship-js",
+    "cucumber",
+    "playwright",
+    "bdd",
+    "material-ui",
+    "mui",
+    "react",
+    "step-definitions"
+  ],
+  "author": "Webship.co",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/webship/material-ui-steps.git"
+  },
+  "bugs": {
+    "url": "https://github.com/webship/material-ui-steps/issues"
+  },
+  "homepage": "https://github.com/webship/material-ui-steps#readme",
+  "publishConfig": {
+    "access": "public"
+  },
+  "engines": {
+    "node": ">= 24.0"
+  },
+  "peerDependencies": {
+    "webship-js": "^2.0.19"
+  },
+  "devDependencies": {
+    "tsx": "^4.23.0",
+    "webship-js": "^2.0.19"
+  },
+  "overrides": {
+    "@cucumber/cucumber": "^12"
+  }
+}

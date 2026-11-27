@@ -1,0 +1,36 @@
+{
+  "name": "material-ui-steps-demo",
+  "version": "2.0.0",
+  "private": true,
+  "type": "module",
+  "description": "The demo of @webship-js/material-ui-steps: Material UI's own Vite starter with its free templates and documentation demos, assembled by demo-src/assemble.sh.",
+  "scripts": {
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "@emotion/react": "11.14.0",
+    "@emotion/styled": "11.14.1",
+    "@fontsource/roboto": "5.3.0",
+    "@mui/icons-material": "9.6.0",
+    "@mui/material": "9.6.0",
+    "@mui/utils": "9.6.0",
+    "@mui/x-charts": "9.18.1",
+    "@mui/x-data-grid": "9.18.0",
+    "@mui/x-date-pickers": "9.18.0",
+    "@mui/x-tree-view": "9.18.0",
+    "@react-spring/web": "10.1.2",
+    "clsx": "2.1.1",
+    "dayjs": "1.11.23",
+    "react": "19.3.1",
+    "react-dom": "19.3.1",
+    "react-router": "7.18.7"
+  },
+  "devDependencies": {
+    "@types/react": "19.3.3",
+    "@types/react-dom": "19.3.0",
+    "@vitejs/plugin-react": "6.3.0",
+    "typescript": "7.0.2",
+    "vite": "8.4.0"
+  }
+}
